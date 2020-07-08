@@ -7,11 +7,11 @@ function divide(a, b) {
 }
 
 function sort(list) {
-  if (list) {
-    throw new Error('Cannot sort an empty array');
-  }
+  // if (list) {
+  //   throw new Error('Cannot sort an empty array');
+  // }
     
-  for(let i = 2; i < list.length; i++){
+  for(let i = 1; i < list.length; i++){
     let j = i;
     while(j > 0 && list[j - 1] > list[j]){
       let temp = list[j];
@@ -20,6 +20,7 @@ function sort(list) {
       j--;
     }
   }
+  
   return list;
 }
 

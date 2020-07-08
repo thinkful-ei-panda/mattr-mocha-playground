@@ -7,7 +7,7 @@ function divide(a, b) {
 }
 
 function sort(list) {
-  if (list === null || list === undefined) {
+  if (list) {
     throw new Error('Cannot sort an empty array');
   }
     

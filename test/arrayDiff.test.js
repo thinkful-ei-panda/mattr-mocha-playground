@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const diff = require('../arrayDiff');
+const diff = require('../mocha_playground/arrayDiff');
 
 describe('Array diff', () => {
   it('should return a if no common elements', () => {
@@ -13,4 +13,10 @@ describe('Array diff', () => {
   it('should return correctly if some elements are removed', () => {
     expect(diff([1,2,3], [2])).to.deep.equal([1,3]);
   })
+
+  // it('should return correctly if some elements are removed', () => {
+  //   expect(diff([1,2,3], [2])).to.eql([1,3]);
+  // })
+
+
 })
